@@ -10,7 +10,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://jsonplaceholder.typicode.com/users')
+    fetch('http://localhost:8080/contacts')
       .then(res => res.json())
       .then(data => {
         this.setState({ contacts: data })
